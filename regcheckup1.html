@@ -78,32 +78,80 @@
 .active {
   background-color: #717171;
 }
-            </style>
-        
-    </head>
-    <body bgcolor="white">
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+</style>
+</head>
+
+<body bgcolor="white">
         <h2 style="color:rgba(16, 17, 17, 0.822);font-size:25px;">
             <center>
             <marquee width="30%" direction="right" height="50px">
           KATTABOMMAN HOTEL</marquee></center>
             </h2>
             <div class="topnav">
-                <a class="active" href="index.html">Home</a>
+                <a class="active" href="main.html">Home</a>
                 <div class="dropdown" href="#hospitalfacilty">
                     <button class="dropbtn">Menu</button> 
                    <div class="dropdown-content">
-                    <a href="">Sign up</a>
+    
                          <a href="stack1.html">Stack Quantity</a>
-                     <a href="login.html">Items</a>
-                     <a href="login.html">Packing Items</a>
+                     <a href="item1.html">Items</a>
+                     <a href="packing.html">Packing Items</a>
                   
                      
                    </div></div>
-                   <a href="gallery.html">Gallery</a>
+                   <a href="gallery.php">Gallery</a>
                 <a href="contactus.html">Contact</a>
             </div>
-            <center>
-            <img src="frontatp.png"   width="1500"  height="550">
-            </center>
-    </body>
-</html>
+            <script>
+                // Get the modal
+            
+                var us= document.getElementById('usname').value;
+                var ps= document.getElementById('pass').value;
+                // When the user clicks anywhere outside of the modal, close it
+               
+                function fun1()
+                {
+                    if(us.value==="kattabommanhotel@gmai.com" && ps.value==="654321")
+                {
+                    document.writeln("Valid User");
+                }
+                else
+                {
+                    document.writeln("inValid User");
+                }
+                }
+        
+                </script>
+                
+                </body>
+                </html>
+                
+                
+                
+                
